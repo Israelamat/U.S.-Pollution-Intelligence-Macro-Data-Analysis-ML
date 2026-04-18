@@ -64,7 +64,8 @@ Environmental data often contains "spikes" that are not errors but critical even
 - [x] **Optimized Predictive Engine:** Finalized **XGBoost/LightGBM** models with hyperparameter tuning.
 - [x] **Custom Tooling:** Successfully integrated the Outlier Analysis package into the main pipeline.
 
----## 📊 Final Performance & Insights
+---
+## 📊 Final Performance & Insights
 
 * **Top Model:** XGBoost Regressor achieved the highest accuracy for NO₂ and O₃ levels.
 * **Validation:** Models were validated using **RMSE** and **MAE** metrics to ensure reliable real-world performance.
