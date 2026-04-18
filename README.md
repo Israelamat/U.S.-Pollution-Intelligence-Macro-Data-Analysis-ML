@@ -64,8 +64,8 @@ Environmental data often contains "spikes" that are not errors but critical even
 - [x] **Optimized Predictive Engine:** Finalized **XGBoost/LightGBM** models with hyperparameter tuning.
 - [x] **Custom Tooling:** Successfully integrated the Outlier Analysis package into the main pipeline.
 
----
+---## 📊 Final Performance & Insights
 
-## 🔐 Model Performance
-
-The project evaluates models based on **RMSE (Root Mean Square Error)** and **R² Score** to ensure maximum precision in pollutant estimation.
+* **Top Model:** XGBoost Regressor achieved the highest accuracy for NO₂ and O₃ levels.
+* **Validation:** Models were validated using **RMSE** and **MAE** metrics to ensure reliable real-world performance.
+* **Key Discovery:** Seasonal patterns and industrial density were identified as the primary drivers for NO₂ spikes.
