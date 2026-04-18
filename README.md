@@ -1,38 +1,60 @@
-# Predicción de la Contaminación del Aire con Machine Learning
+# 🌍 EcoPredict: U.S. Air Quality Analysis & Forecasting
 
-## Introducción
+**EcoPredict** is an advanced Data Science project focused on analyzing and predicting atmospheric pollution levels across the United States. Utilizing high-resolution historical data from the **EPA (Environmental Protection Agency)**, this project employs Machine Learning to forecast the concentration of critical pollutants (NO₂, O₃, SO₂, and CO) and their impact on public health.
 
-La contaminación atmosférica es uno de los principales problemas medioambientales y de salud pública a nivel global. Según la Organización Mundial de la Salud (OMS), más del 90% de la población mundial respira aire contaminado, lo que contribuye a más de 7 millones de muertes prematuras cada año. En Estados Unidos, pese a las regulaciones como la Clean Air Act, aún existen regiones que superan los límites permitidos de calidad del aire, especialmente en zonas urbanas e industriales.
+---
 
-La exposición prolongada a contaminantes como el dióxido de nitrógeno (NO₂), ozono (O₃), dióxido de azufre (SO₂) y monóxido de carbono (CO) se asocia a enfermedades respiratorias y cardiovasculares, así como al aumento de hospitalizaciones. Ante este panorama, resulta fundamental desarrollar modelos predictivos que anticipen los niveles de contaminación del aire, permitiendo:
+## 🔬 Project Overview
 
-- Emitir alertas tempranas ante episodios críticos de contaminación.
-- Apoyar la planificación de políticas públicas y estrategias de mitigación.
-- Informar a la población más vulnerable.
+Air pollution is a global health crisis. In the U.S., despite strict regulations like the *Clean Air Act*, many urban and industrial hubs still face critical air quality challenges. 
 
-Este proyecto tiene como objetivo principal construir un modelo de predicción de la calidad del aire basado en datos reales recopilados en Estados Unidos. Se analiza la evolución temporal de los contaminantes y se aplican técnicas de machine learning para estimar su comportamiento futuro e identificar los factores que más influyen en su variación.
+This project aims to bridge the gap between raw environmental data and actionable insights by:
+* **Trend Identification:** Decoding seasonal and decadal patterns in pollutant behavior.
+* **Risk Mitigation:** Developing predictive models to serve as early warning systems for vulnerable populations.
+* **Policy Support:** Providing data-driven evidence to aid environmental mitigation strategies.
 
-## Objetivos
+---
 
-- Predecir los niveles futuros de contaminantes atmosféricos (NO₂, O₃, SO₂, CO).
-- Identificar tendencias y patrones a lo largo del tiempo.
-- Evaluar el impacto potencial de condiciones ambientales actuales en el futuro.
-- Utilizar modelos de machine learning como complemento a métodos estadísticos tradicionales.
+## 📊 The Dataset
 
-## Dataset
+The analysis is powered by the **EPA Air Quality System (AQS)**.
+* **Features:** Daily measurements of NO₂, O₃, SO₂, and CO concentrations.
+* **Geography:** State-level and City-level granularity across the U.S.
+* **Temporal Scope:** Historical records analyzed for long-term trend extraction.
 
-El conjunto de datos utilizado incluye:
+> [!IMPORTANT]
+> **Source:** Data retrieved from the [EPA Outdoor Air Quality Data portal](https://www.epa.gov/outdoor-air-quality-data).
 
-- Mediciones de calidad del aire por ubicación y fecha.
-- Concentraciones de los contaminantes principales.
-- Variables ambientales complementarias (si aplica).
+---
 
-Fuente: [EPA Air Quality Data](https://www.epa.gov/outdoor-air-quality-data)
+## 🛠️ Technical Stack & Methodology
 
-## Tecnologías utilizadas
+### **The Data Science Pipeline**
+1. **EDA (Exploratory Data Analysis):** Deep dive into spatial-temporal distributions using `Seaborn` and `Matplotlib`.
+2. **Preprocessing:** Handling missing values, outlier detection, and feature scaling.
+3. **Feature Engineering:** Creating lag variables and rolling averages to capture temporal dependencies.
+4. **Modeling:** Implementing a multi-model approach to find the best fit for time-series forecasting.
 
-- Python 3.x
-- Pandas, NumPy, Matplotlib, Seaborn
-- Scikit-learn (modelos clásicos)
-- XGBoost / LightGBM (boosting)
-- TensorFlow / Keras (opcional para modelos más complejos)
+### **Technologies Used**
+| Field | Tools |
+| :--- | :--- |
+| **Language** | Python 3.x |
+| **Data Wrangling** | Pandas, NumPy |
+| **Visualization** | Matplotlib, Seaborn, Plotly |
+| **Machine Learning** | Scikit-learn, XGBoost, LightGBM |
+| **Deep Learning** | TensorFlow / Keras (Experimental) |
+
+---
+
+## 📈 Current Progress & Insights
+
+- [x] **Data Ingestion:** Successful cleaning and normalization of EPA datasets.
+- [x] **Statistical Analysis:** Identification of the highest pollution hotspots in the U.S.
+- [ ] **Predictive Engine:** Tuning hyperparameters for Gradient Boosting Regressors.
+- [ ] **Deployment:** Creating an interactive dashboard for real-time visualization.
+
+---
+
+## 🔐 Model Performance
+
+The project evaluates models based on **RMSE (Root Mean Square Error)** and **R² Score** to ensure maximum precision in pollutant estimation.
