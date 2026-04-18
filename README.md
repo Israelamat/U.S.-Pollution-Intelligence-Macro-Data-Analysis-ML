@@ -46,12 +46,23 @@ The analysis is powered by the **EPA Air Quality System (AQS)**.
 
 ---
 
-## 📈 Current Progress & Insights
+## 📦 Custom Feature: Advanced Outlier Management
 
-- [x] **Data Ingestion:** Successful cleaning and normalization of EPA datasets.
-- [x] **Statistical Analysis:** Identification of the highest pollution hotspots in the U.S.
-- [ ] **Predictive Engine:** Tuning hyperparameters for Gradient Boosting Regressors.
-- [ ] **Deployment:** Creating an interactive dashboard for real-time visualization.
+During the development phase, the high variance in sensor data presented a significant challenge. To solve this, I developed a **custom outlier detection and treatment module**. 
+
+Environmental data often contains "spikes" that are not errors but critical events (wildfires, industrial leaks). My custom logic allows the model to:
+* **Distinguish Noise from Events:** Filter out sensor malfunctions while preserving vital extreme-event data.
+* **Improve Robustness:** Increase the R² score by reducing the impact of non-representative data points.
+* **Automated Cleaning:** A modular approach that can be reused in other environmental time-series projects.
+
+---
+
+## ✅ Project Milestones & Results
+
+- [x] **Data Ingestion:** Successful cleaning and normalization of massive EPA datasets.
+- [x] **Statistical Hotspots:** Precise identification of the highest pollution zones in the U.S.
+- [x] **Optimized Predictive Engine:** Finalized **XGBoost/LightGBM** models with hyperparameter tuning.
+- [x] **Custom Tooling:** Successfully integrated the Outlier Analysis package into the main pipeline.
 
 ---
 
